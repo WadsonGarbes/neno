@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+        <title>{{ title }}</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Navigation: <a href="{{ url_for('index')}}">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
